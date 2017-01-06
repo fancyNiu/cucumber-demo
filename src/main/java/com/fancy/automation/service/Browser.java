@@ -24,4 +24,14 @@ public class Browser {
         return driver;
     }
 
+    /**关闭浏览器*/
+    public static void close(){
+        String cmd = "taskkill /im geckodriver.exe /f";
+        try {
+            Runtime.getRuntime().exec(cmd);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

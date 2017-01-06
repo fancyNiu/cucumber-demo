@@ -1,97 +1,133 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("search.feature");
 formatter.feature({
-  "line": 1,
-  "name": "搜索",
+  "line": 2,
+  "name": "首页菜单栏的点击",
   "description": "",
-  "id": "搜索",
-  "keyword": "Feature"
+  "id": "首页菜单栏的点击",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@high"
+    }
+  ]
 });
 formatter.scenarioOutline({
-  "line": 4,
-  "name": "用户在百度首页上点击链接文字",
+  "line": 5,
+  "name": "用户在百度首页上点击菜单栏的连接文字",
   "description": "",
-  "id": "搜索;用户在百度首页上点击链接文字",
+  "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "打开百度首页",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "点击\u003clinkText\u003e链接",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "跳转到\u003cexpectUrl\u003e页面",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 8,
+  "line": 9,
   "name": "",
   "description": "",
-  "id": "搜索;用户在百度首页上点击链接文字;",
+  "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;",
   "rows": [
     {
       "cells": [
         "linkText",
         "expectUrl"
       ],
-      "line": 9,
-      "id": "搜索;用户在百度首页上点击链接文字;;1"
+      "line": 10,
+      "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;1"
     },
     {
       "cells": [
         "糯米",
         "https://www.nuomi.com/?cid\u003d002540"
       ],
-      "line": 10,
-      "id": "搜索;用户在百度首页上点击链接文字;;2"
+      "line": 11,
+      "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;2"
     },
     {
       "cells": [
         "新闻",
         "http://news.baidu.com/"
       ],
-      "line": 11,
-      "id": "搜索;用户在百度首页上点击链接文字;;3"
+      "line": 12,
+      "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;3"
     },
     {
       "cells": [
         "hao123",
         "https://www.hao123.com/"
       ],
-      "line": 12,
-      "id": "搜索;用户在百度首页上点击链接文字;;4"
+      "line": 13,
+      "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;4"
+    },
+    {
+      "cells": [
+        "地图",
+        "http://map.baidu.com/"
+      ],
+      "line": 14,
+      "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;5"
+    },
+    {
+      "cells": [
+        "视频",
+        "http://v.baidu.com/?fr\u003dbd"
+      ],
+      "line": 15,
+      "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;6"
+    },
+    {
+      "cells": [
+        "贴吧",
+        "https://tieba.baidu.com/index.html"
+      ],
+      "line": 16,
+      "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;7"
     }
   ],
   "keyword": "Examples"
 });
 formatter.background({
-  "line": 2,
+  "line": 3,
   "name": "用户在百度首页上点击链接文字",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 10,
-  "name": "用户在百度首页上点击链接文字",
+  "line": 11,
+  "name": "用户在百度首页上点击菜单栏的连接文字",
   "description": "",
-  "id": "搜索;用户在百度首页上点击链接文字;;2",
+  "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;2",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@high"
+    }
+  ]
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "打开百度首页",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "点击糯米链接",
   "matchedColumns": [
     0
@@ -99,7 +135,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "跳转到https://www.nuomi.com/?cid\u003d002540页面",
   "matchedColumns": [
     1
@@ -110,7 +146,7 @@ formatter.match({
   "location": "HomePageScenario.openHomePage()"
 });
 formatter.result({
-  "duration": 8337696164,
+  "duration": 7505261989,
   "status": "passed"
 });
 formatter.match({
@@ -123,7 +159,7 @@ formatter.match({
   "location": "HomePageScenario.openLink(String)"
 });
 formatter.result({
-  "duration": 100720508,
+  "duration": 84620100,
   "status": "passed"
 });
 formatter.match({
@@ -136,35 +172,41 @@ formatter.match({
   "location": "HomePageScenario.assertUrl(String)"
 });
 formatter.result({
-  "duration": 1222755362,
+  "duration": 1160507697,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1585756566,
+  "duration": 1555187204,
   "status": "passed"
 });
 formatter.background({
-  "line": 2,
+  "line": 3,
   "name": "用户在百度首页上点击链接文字",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 11,
-  "name": "用户在百度首页上点击链接文字",
+  "line": 12,
+  "name": "用户在百度首页上点击菜单栏的连接文字",
   "description": "",
-  "id": "搜索;用户在百度首页上点击链接文字;;3",
+  "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;3",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@high"
+    }
+  ]
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "打开百度首页",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "点击新闻链接",
   "matchedColumns": [
     0
@@ -172,7 +214,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "跳转到http://news.baidu.com/页面",
   "matchedColumns": [
     1
@@ -183,7 +225,7 @@ formatter.match({
   "location": "HomePageScenario.openHomePage()"
 });
 formatter.result({
-  "duration": 6209431272,
+  "duration": 6772759421,
   "status": "passed"
 });
 formatter.match({
@@ -196,7 +238,7 @@ formatter.match({
   "location": "HomePageScenario.openLink(String)"
 });
 formatter.result({
-  "duration": 84288397,
+  "duration": 89847100,
   "status": "passed"
 });
 formatter.match({
@@ -209,35 +251,41 @@ formatter.match({
   "location": "HomePageScenario.assertUrl(String)"
 });
 formatter.result({
-  "duration": 1154098511,
+  "duration": 1185885049,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1440217011,
+  "duration": 1386197530,
   "status": "passed"
 });
 formatter.background({
-  "line": 2,
+  "line": 3,
   "name": "用户在百度首页上点击链接文字",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 12,
-  "name": "用户在百度首页上点击链接文字",
+  "line": 13,
+  "name": "用户在百度首页上点击菜单栏的连接文字",
   "description": "",
-  "id": "搜索;用户在百度首页上点击链接文字;;4",
+  "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;4",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@high"
+    }
+  ]
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "打开百度首页",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "点击hao123链接",
   "matchedColumns": [
     0
@@ -245,7 +293,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "跳转到https://www.hao123.com/页面",
   "matchedColumns": [
     1
@@ -256,7 +304,7 @@ formatter.match({
   "location": "HomePageScenario.openHomePage()"
 });
 formatter.result({
-  "duration": 6627806760,
+  "duration": 5711760655,
   "status": "passed"
 });
 formatter.match({
@@ -269,7 +317,7 @@ formatter.match({
   "location": "HomePageScenario.openLink(String)"
 });
 formatter.result({
-  "duration": 163826122,
+  "duration": 83675378,
   "status": "passed"
 });
 formatter.match({
@@ -282,113 +330,41 @@ formatter.match({
   "location": "HomePageScenario.assertUrl(String)"
 });
 formatter.result({
-  "duration": 1121012687,
+  "duration": 1091038616,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1336391280,
+  "duration": 1357962217,
   "status": "passed"
 });
-formatter.scenarioOutline({
-  "comments": [
-    {
-      "line": 13,
-      "value": "#      | 地图 | http://map.baidu.com/       |"
-    },
-    {
-      "line": 14,
-      "value": "#      | 视频 | http://v.baidu.com/?fr\u003dbd         |"
-    },
-    {
-      "line": 15,
-      "value": "#      | 贴吧 | https://tieba.baidu.com/index.html     |"
-    }
-  ],
-  "line": 18,
-  "name": "不知道用户要干嘛",
-  "description": "",
-  "id": "搜索;不知道用户要干嘛",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 19,
-  "name": "打开百度首页",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 20,
-  "name": "点击\u003clinkText\u003e链接",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 21,
-  "name": "跳转到\u003cexpectUrl\u003e页面",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 22,
-  "name": "",
-  "description": "",
-  "id": "搜索;不知道用户要干嘛;",
-  "rows": [
-    {
-      "cells": [
-        "linkText",
-        "expectUrl"
-      ],
-      "line": 23,
-      "id": "搜索;不知道用户要干嘛;;1"
-    },
-    {
-      "cells": [
-        "地图",
-        "http://map.baidu.com/"
-      ],
-      "line": 24,
-      "id": "搜索;不知道用户要干嘛;;2"
-    },
-    {
-      "cells": [
-        "视频",
-        "http://v.baidu.com/?fr\u003dbd"
-      ],
-      "line": 25,
-      "id": "搜索;不知道用户要干嘛;;3"
-    },
-    {
-      "cells": [
-        "贴吧",
-        "https://tieba.baidu.com/index.html"
-      ],
-      "line": 26,
-      "id": "搜索;不知道用户要干嘛;;4"
-    }
-  ],
-  "keyword": "Examples"
-});
 formatter.background({
-  "line": 2,
+  "line": 3,
   "name": "用户在百度首页上点击链接文字",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 24,
-  "name": "不知道用户要干嘛",
+  "line": 14,
+  "name": "用户在百度首页上点击菜单栏的连接文字",
   "description": "",
-  "id": "搜索;不知道用户要干嘛;;2",
+  "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;5",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@high"
+    }
+  ]
 });
 formatter.step({
-  "line": 19,
+  "line": 6,
   "name": "打开百度首页",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 20,
+  "line": 7,
   "name": "点击地图链接",
   "matchedColumns": [
     0
@@ -396,7 +372,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 21,
+  "line": 8,
   "name": "跳转到http://map.baidu.com/页面",
   "matchedColumns": [
     1
@@ -407,7 +383,7 @@ formatter.match({
   "location": "HomePageScenario.openHomePage()"
 });
 formatter.result({
-  "duration": 6368803435,
+  "duration": 6298712938,
   "status": "passed"
 });
 formatter.match({
@@ -420,7 +396,7 @@ formatter.match({
   "location": "HomePageScenario.openLink(String)"
 });
 formatter.result({
-  "duration": 117539373,
+  "duration": 99832703,
   "status": "passed"
 });
 formatter.match({
@@ -433,35 +409,41 @@ formatter.match({
   "location": "HomePageScenario.assertUrl(String)"
 });
 formatter.result({
-  "duration": 1182914187,
+  "duration": 1206430086,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1358349436,
+  "duration": 1371191600,
   "status": "passed"
 });
 formatter.background({
-  "line": 2,
+  "line": 3,
   "name": "用户在百度首页上点击链接文字",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 25,
-  "name": "不知道用户要干嘛",
+  "line": 15,
+  "name": "用户在百度首页上点击菜单栏的连接文字",
   "description": "",
-  "id": "搜索;不知道用户要干嘛;;3",
+  "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;6",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@high"
+    }
+  ]
 });
 formatter.step({
-  "line": 19,
+  "line": 6,
   "name": "打开百度首页",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 20,
+  "line": 7,
   "name": "点击视频链接",
   "matchedColumns": [
     0
@@ -469,7 +451,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 21,
+  "line": 8,
   "name": "跳转到http://v.baidu.com/?fr\u003dbd页面",
   "matchedColumns": [
     1
@@ -480,7 +462,7 @@ formatter.match({
   "location": "HomePageScenario.openHomePage()"
 });
 formatter.result({
-  "duration": 7159752384,
+  "duration": 5796746515,
   "status": "passed"
 });
 formatter.match({
@@ -493,7 +475,7 @@ formatter.match({
   "location": "HomePageScenario.openLink(String)"
 });
 formatter.result({
-  "duration": 182169606,
+  "duration": 107463263,
   "status": "passed"
 });
 formatter.match({
@@ -506,35 +488,41 @@ formatter.match({
   "location": "HomePageScenario.assertUrl(String)"
 });
 formatter.result({
-  "duration": 1035655003,
+  "duration": 1007135573,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1421072962,
+  "duration": 1421414929,
   "status": "passed"
 });
 formatter.background({
-  "line": 2,
+  "line": 3,
   "name": "用户在百度首页上点击链接文字",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 26,
-  "name": "不知道用户要干嘛",
+  "line": 16,
+  "name": "用户在百度首页上点击菜单栏的连接文字",
   "description": "",
-  "id": "搜索;不知道用户要干嘛;;4",
+  "id": "首页菜单栏的点击;用户在百度首页上点击菜单栏的连接文字;;7",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@high"
+    }
+  ]
 });
 formatter.step({
-  "line": 19,
+  "line": 6,
   "name": "打开百度首页",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 20,
+  "line": 7,
   "name": "点击贴吧链接",
   "matchedColumns": [
     0
@@ -542,7 +530,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 21,
+  "line": 8,
   "name": "跳转到https://tieba.baidu.com/index.html页面",
   "matchedColumns": [
     1
@@ -553,7 +541,7 @@ formatter.match({
   "location": "HomePageScenario.openHomePage()"
 });
 formatter.result({
-  "duration": 6361577822,
+  "duration": 6013806948,
   "status": "passed"
 });
 formatter.match({
@@ -566,7 +554,7 @@ formatter.match({
   "location": "HomePageScenario.openLink(String)"
 });
 formatter.result({
-  "duration": 156304730,
+  "duration": 115449320,
   "status": "passed"
 });
 formatter.match({
@@ -579,11 +567,11 @@ formatter.match({
   "location": "HomePageScenario.assertUrl(String)"
 });
 formatter.result({
-  "duration": 1329988626,
+  "duration": 1255371856,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1424552808,
+  "duration": 1401586015,
   "status": "passed"
 });
 });

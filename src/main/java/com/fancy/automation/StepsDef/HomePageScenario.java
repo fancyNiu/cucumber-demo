@@ -1,6 +1,7 @@
 package com.fancy.automation.StepsDef;
 
 import com.fancy.automation.container.HomePageContainer;
+import com.fancy.automation.service.Browser;
 import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -21,8 +22,13 @@ import java.util.List;
 public class HomePageScenario {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(HomePageScenario.class);
-    HomePageContainer homePage = new HomePageContainer();
-    WebDriver driver = homePage.driver;
+    private HomePageContainer homePage;
+    private WebDriver driver;
+
+    public HomePageScenario() {
+         homePage = new HomePageContainer();
+         driver = homePage.driver;
+    }
 
     @Given("^打开百度首页$")
     public void openHomePage() throws InterruptedException {

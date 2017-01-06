@@ -1,35 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="57.482681">
-<testcase classname="搜索" name="用户在百度首页上点击链接文字" time="11.246929">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="54.079844">
+<testcase classname="首页菜单栏的点击" name="用户在百度首页上点击菜单栏的连接文字" time="10.305577">
 <system-out><![CDATA[Given 打开百度首页................................................................passed
 When 点击糯米链接.................................................................passed
 Then 跳转到https://www.nuomi.com/?cid=002540页面.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="搜索" name="用户在百度首页上点击链接文字_2" time="8.888035">
+<testcase classname="首页菜单栏的点击" name="用户在百度首页上点击菜单栏的连接文字_2" time="9.434689">
 <system-out><![CDATA[Given 打开百度首页................................................................passed
 When 点击新闻链接.................................................................passed
 Then 跳转到http://news.baidu.com/页面............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="搜索" name="用户在百度首页上点击链接文字_3" time="9.249037">
+<testcase classname="首页菜单栏的点击" name="用户在百度首页上点击菜单栏的连接文字_3" time="8.244437">
 <system-out><![CDATA[Given 打开百度首页................................................................passed
 When 点击hao123链接.............................................................passed
 Then 跳转到https://www.hao123.com/页面...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="搜索" name="不知道用户要干嘛" time="9.027606">
+<testcase classname="首页菜单栏的点击" name="用户在百度首页上点击菜单栏的连接文字_4" time="8.976167">
 <system-out><![CDATA[Given 打开百度首页................................................................passed
 When 点击地图链接.................................................................passed
 Then 跳转到http://map.baidu.com/页面.............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="搜索" name="不知道用户要干嘛_2" time="9.79865">
+<testcase classname="首页菜单栏的点击" name="用户在百度首页上点击菜单栏的连接文字_5" time="8.33276">
 <system-out><![CDATA[Given 打开百度首页................................................................passed
 When 点击视频链接.................................................................passed
 Then 跳转到http://v.baidu.com/?fr=bd页面.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="搜索" name="不知道用户要干嘛_3" time="9.272424">
+<testcase classname="首页菜单栏的点击" name="用户在百度首页上点击菜单栏的连接文字_6" time="8.786214">
 <system-out><![CDATA[Given 打开百度首页................................................................passed
 When 点击贴吧链接.................................................................passed
 Then 跳转到https://tieba.baidu.com/index.html页面................................passed

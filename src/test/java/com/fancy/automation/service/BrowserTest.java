@@ -15,6 +15,7 @@ public class BrowserTest {
         driver.get("https://www.baidu.com");
         driver.manage().window().maximize();
         driver.quit();
+        Browser.close();
     }
 
 }
